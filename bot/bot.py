@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, CallbackContext
-TOKEN = os.environ.get("7993810257:AAEEU1jmQWLaICjS1rrgHYCwyODAMfNmJx0") # Получаем токен из переменной окружения
+TOKEN = ("7993810257:AAEEU1jmQWLaICjS1rrgHYCwyODAMfNmJx0") # Получаем токен из переменной окружения
 def get_recipe(ingredients):
     """Ищет рецепт в интернете. Возвращает текст или сообщение об ошибке."""
     query = f"{ingredients} рецепт"  # Формируем поисковый запрос
